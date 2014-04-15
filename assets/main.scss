@@ -1,0 +1,28 @@
+@import "category-selector";
+
+button {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0.25em 0.65em;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #888;
+    white-space: nowrap;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    border-width: 1px;
+    border-bottom-width: 4px;
+    border-style: solid;
+    border-radius: 0.15em;
+    transition: background-color 0.25s ease;
+    color: #666;
+    background: #fafafa;
+    border-color: #e1e1e1;
+}
+button:hover {
+    background-color: #fff;
+    background-image: none
+}
+button:active {
+    background-image: none;
+    background-color: #e1e1e1;
+}

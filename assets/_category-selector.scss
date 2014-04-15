@@ -1,0 +1,33 @@
+category-selector {
+	display: inline-block;
+	border: 1px solid #dedede;
+
+	category-option {
+		display: block;
+		padding: 0.25em;
+		cursor: pointer;
+
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+
+		&:before {
+			content: '-';
+		}
+		&:hover:before {
+			content: '>';
+		}
+		&[disabled] {
+			opacity: 0.25;
+			&:hover:before {
+				content: '-';
+			}
+		}
+		&[selected] {
+			font-weight: bold;
+		}
+	}
+}
